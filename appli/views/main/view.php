@@ -21,13 +21,22 @@
             <div class="content" align="center">
                 <?php include($this->getViewFileName()); ?>
             </div>
+            <div id="windows_menu">
+
+            </div>
             <div class="menu">
+                <a href="#" class="">
+                    <img id="windows_icon" src="startup/images/icones/menu/windows.png"/>
+                </a>
                 <div class="container">
-                    <a href="#" class="windows">
-                        <img src="startup/images/icones/menu/windows.png"/>
-                    </a>
                     <div class="entry">Staff</div>
-                    <div class="entry">Outlook</div>
+                    <div class="entry outlook">
+                        <a href="#">
+                            <img src="startup/images/icones/menu/outlook.png" />
+                            <br/>
+                            <span>Outlook</span>
+                        </a>
+                    </div>
                     <div class="entry">Alertes</div>
                     <div class="entry">VOUS</div>
                     <div class="entry">Tendances</div>

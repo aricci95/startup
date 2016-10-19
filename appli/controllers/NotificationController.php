@@ -2,11 +2,7 @@
 
 class NotificationController extends AppController
 {
-    protected $_authLevel = array(
-        Auth::ROLE_SKI,
-        Auth::ROLE_OWNER,
-        Auth::ROLE_ADMIN,
-    );
+    protected $_authLevel = array();
 
     public function renderRead()
     {
