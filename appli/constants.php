@@ -1,0 +1,56 @@
+<?php
+DEFINE('APP_VERSION', '1.0');
+
+// Niveaux de logs
+DEFINE('LOG_LEVEL_DEBUG', 0);
+DEFINE('LOG_LEVEL_INFO', 1);
+DEFINE('LOG_LEVEL_WARN', 2);
+DEFINE('LOG_LEVEL_HACK', 3);
+DEFINE('LOG_LEVEL_ERR', 4);
+DEFINE('LOG_LEVEL_PHP', 10);
+
+// Librairies JS
+DEFINE('JS_PHOTO', 'photo');
+DEFINE('JS_GROWLER', 'growler');
+DEFINE('JS_MODAL', 'modal');
+DEFINE('JS_SCROLL_REFRESH', 'scroll_refresh');
+DEFINE('JS_AUTOCOMPLETE', 'autocomplete');
+DEFINE('JS_DATEPICKER', 'datepicker');
+DEFINE('JS_SEARCH', 'search');
+DEFINE('JS_EDIT', 'edit');
+DEFINE('JS_CREW', 'crew');
+DEFINE('JS_FEED', 'feed');
+DEFINE('JS_AGENDA', 'agenda');
+
+// Dimensions des photos
+DEFINE("MAX_SIZE", 1000);
+DEFINE("MAX_DIMENSION", 1000);
+
+DEFINE("ONLINE_TIME_LIMIT", 10000);
+
+// Growler
+DEFINE('GROWLER_INFO', 'info');
+DEFINE('GROWLER_ERR', 'err');
+DEFINE('GROWLER_OK', 'ok');
+
+// Messages d'erreurs
+DEFINE('ERR_DEFAULT', 400);
+DEFINE('MESSAGE_400', 'Une erreur est survenue.');
+
+// CODE ERREURS
+DEFINE('ERROR_SQL', 501);
+DEFINE('MESSAGE_501', "Un erreur est survenue.");
+DEFINE('ERROR_BEHAVIOR', 502);
+DEFINE('MESSAGE_502', "Un erreur est survenue.");
+DEFINE('ERROR_NOT_FOUND', 504);
+DEFINE('MESSAGE_504', "Contenu introuvable.");
+
+//Status de mail
+DEFINE('MESSAGE_STATUS_SENT', 1);
+DEFINE('MESSAGE_STATUS_READ', 2);
+DEFINE('MESSAGE_STATUS_DELETED', 4);
+DEFINE('MESSAGE_STATUS_ADMIN', 9);
+
+// code retour JSON
+DEFINE('JSON_OK', 200);
+DEFINE('JSON_ERR', 500);
