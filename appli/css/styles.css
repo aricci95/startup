@@ -10,6 +10,10 @@
     src: url(/startup/libraries/fonts/winter.ttf), url(/startup/libraries/fonts/winter.eot);
 }
 
+.staff table td {
+    border :1px black solid;
+}
+
 .smallPortrait {
     width: 100px;
     height: 120px;
@@ -28,6 +32,35 @@
     background-position: top center;
     border: 2px outset;
     margin:5px;
+}
+
+.smallProfileLogin {
+    background-image: linear-gradient(30deg, white, #908A8A);
+    /* margin-left: -2px; */
+     width: 110px;
+     height: 26px;
+    color: black;
+    box-shadow: 0 10px 6px -6px #777;
+    border: 1px grey solid;
+    /* margin-top: 133px; */
+    text-align: center;
+    font-family: Calibri;
+    font-size: 21px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.staffPortrait {
+    left: 200px;
+    top:70px;
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 2px outset;
 }
 
 #employee_profile .name {
@@ -61,6 +94,7 @@
     background-image:url(/startup/images/staff/staff.png);
     background-repeat:no-repeat;
     text-align: center;
+    margin-top:50px;
     width: 1000px;
     height: 520px;
 }
@@ -79,7 +113,8 @@
 }
 
 .site {
-    width:auto;
+    width: 100%;
+    overflow: hidden;
     background-image:url(/startup/images/structure/texture.png);
     background-color:rgb(247, 247, 248);
     text-align:center;
@@ -274,6 +309,8 @@ h3 {
 }
 
 .content {
+    overflow-y: scroll;
+    height:79%;
 }
 
 .editTable input {

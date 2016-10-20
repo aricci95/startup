@@ -3,7 +3,7 @@
         <table>
             <tr>
                 <td>
-                    <div class="popup smallProfilePortrait shade" href="photos/tritt.jpg"" style="float:left;background-image:url(startup/photos/tritt.jpg"></div>
+                    <div class="smallProfilePortrait" style="float:left;background-image:url(startup/photos/tritt.jpg);"></div>
                 </td>
                 <td>
                     <div class="name">
@@ -29,13 +29,14 @@
                     <span style="margin:5px;">Attributs spéciaux :</span>
                     <ul>
                         <li>Alcoolique</li>
-                        <li>Raciste</li>
+                        <li>Sexiste</li>
                         <li>???</li>
                     </ul>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
+                    <span style="margin:5px;">Ecran :</span>
                     <img class="screen" src="startup/images/screens/working.png" />
                 </td>
             </tr>
