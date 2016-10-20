@@ -5,19 +5,10 @@
         <?php $this->render('main/wJavascript'); ?>
         <?php $this->render('main/wCss'); ?>
         <link rel="icon" type="image/png" href="startup/images/icones/fav.gif" />
-        <title>Startup Simulator</title>
     </head>
     <body>
-        <div class="header">
-            <div class="userMenu">
-                <div class="header">
-                    <a href="<?php echo ($this->context->get('user_id')) ? 'home' : 'subscribe'; ?>">Startup Simulator</a>
-                    <span class="startup">Zob Inc.</span>
-                </div>
-            </div>
-        </div>
         <div class="site">
-            <div class="title"><?php if (!empty($this->getTitle())) echo $this->getTitle(); ?></div>
+            <div class="title">Startup simulator</div>
             <div class="content" align="center">
                 <?php include($this->getViewFileName()); ?>
             </div>
@@ -33,8 +24,6 @@
                     <div class="entry outlook">
                         <a href="#">
                             <img src="startup/images/icones/menu/outlook.png" />
-                            <br/>
-                            <span>Outlook</span>
                         </a>
                     </div>
                     <div class="entry">Alertes</div>
