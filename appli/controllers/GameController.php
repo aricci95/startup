@@ -1,10 +1,10 @@
 <?php
 
-class StaffController extends AppController
+class GameController extends AppController
 {
     public function render()
     {
-        $this->view->getJSONResponse('staff/wIndex');
+        $this->view->setViewName('game/wIndex')->render();
     }
 
     public function renderShow()

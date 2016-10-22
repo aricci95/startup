@@ -12,26 +12,21 @@
             <div class="content" align="center">
                 <?php include($this->getViewFileName()); ?>
             </div>
-            <div id="windows_menu">
-
+            <div id="windows_menu"></div>
+            <div id="notifications_menu">
+                <h2>Centre de notifications</h2>
+                Aucune nouvelle notification
             </div>
             <div class="menu">
-                <a href="#" class="">
-                    <img id="windows_icon" src="startup/images/icones/menu/windows.png"/>
-                </a>
                 <div class="container">
-                    <div class="entry">Staff</div>
-                    <div class="entry outlook">
-                        <a href="#">
-                            <img src="startup/images/icones/menu/outlook.png" />
-                        </a>
-                    </div>
-                    <div class="entry">Alertes</div>
-                    <div class="entry">VOUS</div>
-                    <div class="entry">Tendances</div>
-                    <div class="entry">Café</div>
-                    <div class="entry">Actions</div>
+                    <img id="windows_icon" menu="windows" src="startup/images/icones/menu/windows.png"/>
+                    <img class="menuEntry" OnClick="render('staff')" src="startup/images/icones/menu/staff.png" />
+                    <img class="menuEntry" OnClick="render('outlook')" src="startup/images/icones/menu/outlook.png" />
                 </div>
+                <div id="windows_date">11-10-2016</div>
+                <a href="#">
+                    <img id="alert_icon" menu="notifications" src="startup/images/icones/menu/alert.png" />
+                </a>
             </div>
         </div>
     </body>

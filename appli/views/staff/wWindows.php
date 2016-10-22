@@ -1,5 +1,5 @@
 <div id="employee_profile">
-    <div>
+    <div style="float:left;overflow-y: scroll;overflow-x: hidden;width:47%">
         <table>
             <tr>
                 <td>
@@ -36,10 +36,22 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <span style="margin:5px;">Ecran :</span>
+                    <span style="margin:5px;">Etat :</span>
+                    <span style="color:green;"><b>bosse</b></span>
                     <img class="screen" src="startup/images/screens/working.png" />
                 </td>
             </tr>
         </table>
+    </div>
+    <div class="action_side">
+        <h2>Actions</h2>
+        <div class="actions">
+            <div>Modifier Salaire</div>
+            <div>Réprimander</div>
+            <div>Valoriser</div>
+            <div>Mettre au placard</div>
+            <div>Licencier</div>
+            <div>Fixer objectif</span>
+        </div>
     </div>
 </div>

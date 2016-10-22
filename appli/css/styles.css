@@ -1,17 +1,35 @@
 @CHARSET "utf-8";
 
-@font-face {
-    font-family: PlanSki;
-    src: url(/startup/libraries/fonts/planski.ttf), url(/startup/libraries/fonts/planski.eot);
+#employee_profile .actions div:hover {
+    cursor: pointer;
+    float:left;
+    font-size: 20px;
+    border: 1px grey block;
+    padding:5px;
+    width:100%;
+    height:30px;
+    color: white;
+    background-color: black;
 }
 
-@font-face {
-    font-family: Winter;
-    src: url(/startup/libraries/fonts/winter.ttf), url(/startup/libraries/fonts/winter.eot);
+.action_side {
+    float:left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width:53%;
+    height: 100%;
 }
 
-.staff table td {
-    border :1px black solid;
+#employee_profile .actions div {
+    cursor: pointer;
+    float:left;
+    font-size: 20px;
+    border: 1px white dotted;
+    padding:5px;
+    width:100%;
+    height:30px;
+    color: white;
+    background-color: #A4A4A4;
 }
 
 .smallPortrait {
@@ -114,6 +132,7 @@
 
 .site {
     width: 100%;
+    height:99%;
     overflow: hidden;
     background-image:url(/startup/images/structure/texture.png);
     background-color:rgb(247, 247, 248);
@@ -123,29 +142,28 @@
 
 .title {
     text-shadow: 2px 2px black;
-    font-family: Winter;
+    font-family: Arial;
     white-space: nowrap;
     overflow: hidden;
     font-size: 18px;
-    padding: 20px;
-    padding-top: 5px;
-    height: 45px;
-    width: 97%;
+    height: 7%;
+    width: 100%;
     background-color: rgb(29, 39, 35);
     color: rgb(200, 223, 230);
     font-size: 32px;
 }
 
 .menu {
+    opacity: 0.8;
     position:absolute;
     bottom:0;
     left:0;
     text-shadow: 2px 2px black;
-    font-family: Winter;
+    font-family: Arial;
     white-space: nowrap;
     overflow: hidden;
     font-size: 18px;
-    height: 70px;
+    height: 8%;
     width: 100%;
     background-color: rgb(29, 39, 35);
     color: rgb(200, 223, 230);
@@ -154,33 +172,58 @@
 
 #windows_menu {
     display: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
-    bottom: 0;
-    width: 277px;
-    height: 99%;
-    border: 2px black outset;
+    bottom: 8%;
+    width: 50%;
+    height:88%;
+    border: 1px grey outset;
+}
+
+#notifications_menu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 25%;
+    height:92%;
+    border: 1px white solid;
 }
 
 #windows_icon {
-    float:left;
-    margin-right:100px;
-    width: 70px;
-    height: 70px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    height: 100%;
 }
 
-.menu .entry {
-    float:left;
-    padding-right: 20px;
+#alert_icon {
+    position: absolute;
+    right: 10;
+    bottom: 5px;
+    height:80%;
 }
 
-.menu .outlook img {
-    height: 50px;
-    width: 70px;
+#windows_date {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
 }
 
-.menu .outlook span {
-    float:right;
+.container {
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+.container img {
+    height: 80%;
+    cursor: pointer;
 }
 
 .header {
@@ -203,7 +246,7 @@
 
 .submitButton {
     font-size: 19px;
-    font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+    font-family: 'Freight Sans Bold', Arial, arial, sans-serif !important;
     margin-top: 10px;
     margin-bottom: 10px;
     min-width: 194px;
@@ -256,7 +299,7 @@ h3 {
     margin-top: 3px;
     z-index: 1000;
     font-size: 61px;
-    font-family: PlanSki;
+    font-family: Arial;
     float: left;
     padding-left: 44px;
     position: absolute;
@@ -310,7 +353,7 @@ h3 {
 
 .content {
     overflow-y: scroll;
-    height:79%;
+    height:86%;
 }
 
 .editTable input {
@@ -323,8 +366,8 @@ h3 {
     border-left: 1px black solid;
     border-right: 1px black solid;
     margin:2% auto;
-
 }
+
 form {
     margin: 0;
 }
